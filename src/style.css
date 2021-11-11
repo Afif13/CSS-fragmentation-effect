@@ -11,11 +11,13 @@ img {
 img:hover {
   --f-o:0;
 }
-
+section {
+  text-align:center; 
+}
 .square img{
   -webkit-mask:paint(fragmentation);  
 }
-.triangular img{
+.Triangle img{
   -webkit-mask:paint(fragmentation-triangle);  
 }
 .hexagon img{
