@@ -1,4 +1,4 @@
-registerPaint('fragmentation', class  {
+registerPaint('fragmentation-hexagon', class  {
 
   static get inputProperties() {
     return [
