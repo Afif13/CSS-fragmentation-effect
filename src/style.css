@@ -1,0 +1,23 @@
+@property --f-o{
+  syntax: '<number>';
+  inherits: false;
+  initial-value: 1;
+}
+
+img {
+  --f-o:1;
+  transition:--f-o 1s;
+}
+img:hover {
+  --f-o:0;
+}
+
+.square img{
+  -webkit-mask:paint(fragmentation);  
+}
+.triangular img{
+  -webkit-mask:paint(fragmentation-triangle);  
+}
+.hexagon img{
+  -webkit-mask:paint(fragmentation-hexagon);  
+}
