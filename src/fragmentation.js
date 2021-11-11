@@ -4,6 +4,7 @@ registerPaint('fragmentation', class  {
       '--f-n',
       '--f-m',
       '--f-o',
+      '--f-l',
       '--f-seed'
     ]
   }
@@ -13,7 +14,7 @@ registerPaint('fragmentation', class  {
     const o = properties.get('--f-o');
     const w = size.width/n;
     const h = size.height/m;
-    const l = 10;
+    const l = properties.get('--f-l');
     
     const mask = 0xffffffff;
     const seed = properties.get('--f-seed');
