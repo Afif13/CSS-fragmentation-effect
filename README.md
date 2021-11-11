@@ -44,7 +44,37 @@ img:hover {
 }
 ```
 
+#### 1. Default Fragmentation
 
+For the default type of fragmentation you need to define the number of rows and columns
 
+```css
+img {
+  --f-n:10;
+  --f-m:20;
+}
+```
+
+#### 2. Triangle Fragmentation
+
+When using the triangle shapes we only define the number of points that will be used by the [Delaunay triangulation algorithm](https://en.wikipedia.org/wiki/Delaunay_triangulation)
+
+```css
+img {
+  --f-n:10;
+}
+```
+
+#### 3. Hexagin Fragmentation
+
+For this one we define the size of the hexagon shape
+
+```css
+img {
+  --f-r:20;
+}
+```
+
+-----
 
 Find all the details in my [CSS-tricks article](https://css-tricks.com/exploring-the-css-paint-api-image-fragmentation-effect/)
