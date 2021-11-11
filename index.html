@@ -15,11 +15,38 @@
   <meta property="og:description" content="A fragmentation effect created using the CSS Paint API from the Houdini project">
   <meta property="og:image" content="https://github.com/Afif13/CSS-fragmentation-effect/blob/f5271e0647207eec3631c96c3caebff0a88526f2/header.gif">
   <link rel="stylesheet" href="src/style.css">
-
 </head>
-
 <body>
-
-
+<h1>CSS Paint API: Fragmentation Effect</h1>
+  <hr>
+  <h2>Square fragmentation</h2>
+  <section class="square">
+  <img src="https://picsum.photos/id/1069/300/300">
+  <img src="https://picsum.photos/id/1032/300/300">
+  <img src="https://picsum.photos/id/1072/300/300">
+  </section>
+  <hr>
+  <h2>Tringular fragmentation</h2>
+  <section class="triangular">
+  <img src="https://picsum.photos/id/1069/300/300">
+  <img src="https://picsum.photos/id/1032/300/300">
+  <img src="https://picsum.photos/id/1072/300/300">
+  </section>
+  <hr>
+  <h2>Hexagon fragmentation</h2>
+  <section class="hexagon">
+  <img src="https://picsum.photos/id/1069/300/300">
+  <img src="https://picsum.photos/id/1032/300/300">
+  <img src="https://picsum.photos/id/1072/300/300">
+  </section>
+<script>
+if (CSS.paintWorklet) {              
+  CSS.paintWorklet.addModule('/src/fragmentation.js');
+  CSS.paintWorklet.addModule('/src/fragmentation-triangular.js');
+  CSS.paintWorklet.addModule('/src/fragmentation-hexagon.js');
+} else {
+  console.log("Your browser doesn't support the Paint API :(");
+}
+</script>
 </body>
 </html>
