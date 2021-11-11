@@ -5,6 +5,7 @@
 }
 
 img {
+  cursor:pointer;
   --f-o:1;
   transition:--f-o 1s;
 }
