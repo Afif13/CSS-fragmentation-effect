@@ -6,6 +6,7 @@ registerPaint('fragmentation-triangle', class  {
     return [
       '--f-n',
       '--f-o',
+      '--f-l',
       '--f-seed'
     ]
   }
@@ -14,7 +15,7 @@ registerPaint('fragmentation-triangle', class  {
     const o = properties.get('--f-o');
     const w = size.width;
     const h = size.height;
-    const l = 7; 
+    const l = properties.get('--f-l'); 
    
     /* seeded random */
     const mask = 0xffffffff;
