@@ -40,10 +40,10 @@
   <img src="https://picsum.photos/id/1072/300/300">
   </section>
 <script>
-if (CSS.paintWorklet) {              
-  CSS.paintWorklet.addModule('/src/fragmentation.js');
-  CSS.paintWorklet.addModule('/src/fragmentation-triangular.js');
-  CSS.paintWorklet.addModule('/src/fragmentation-hexagon.js');
+if(CSS.paintWorklet) {              
+  CSS.paintWorklet.addModule('src/fragmentation.js');
+  CSS.paintWorklet.addModule('src/fragmentation-triangular.js');
+  CSS.paintWorklet.addModule('src/fragmentation-hexagon.js');
 } else {
   console.log("Your browser doesn't support the Paint API :(");
 }
