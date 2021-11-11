@@ -4,6 +4,7 @@ registerPaint('fragmentation-hexagon', class  {
     return [
       '--f-r',
       '--f-o',
+      '--f-l',
       '--f-seed'
     ]
   }
@@ -13,7 +14,7 @@ registerPaint('fragmentation-hexagon', class  {
     const w = size.width;
     const h = size.height;
     const a = 2 * Math.PI / 6;
-    const l = 7; 
+    const l = properties.get('--f-l');
    
     /* seeded random */
     const mask = 0xffffffff;
