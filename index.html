@@ -35,14 +35,14 @@
   <hr>
   <h2>Hexagon fragmentation</h2>
   <section class="hexagon">
-  <img src="https://picsum.photos/id/1069/300/300">
-  <img src="https://picsum.photos/id/1032/300/300">
-  <img src="https://picsum.photos/id/1072/300/300">
+  <img src="https://picsum.photos/id/1069/300/300" style="--f-r:50;--f-seed:96">
+  <img src="https://picsum.photos/id/1032/300/300" style="--f-r:100;--f-seed:999">
+  <img src="https://picsum.photos/id/1072/300/300" style="--f-r:120;--f-seed:68">
   </section>
 <script>
 if(CSS.paintWorklet) {              
   CSS.paintWorklet.addModule('src/fragmentation.js');
-  CSS.paintWorklet.addModule('src/fragmentation-triangular.js');
+  CSS.paintWorklet.addModule('src/fragmentation-triangle.js');
   CSS.paintWorklet.addModule('src/fragmentation-hexagon.js');
 } else {
   console.log("Your browser doesn't support the Paint API :(");
