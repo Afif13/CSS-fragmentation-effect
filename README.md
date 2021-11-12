@@ -9,7 +9,7 @@ Create a fragmentation effect with a few lines of code thanks to the CSS Paint A
 
 ## How to use
 
-You first include the Paint Worklet you want to use:
+First, you include the Paint Worklet you want to use:
 
 ```html
 <script>
