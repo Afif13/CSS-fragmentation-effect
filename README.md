@@ -65,7 +65,7 @@ img {
 }
 ```
 
-#### 3. Hexagin Fragmentation
+#### 3. Hexagon Fragmentation
 
 For this one we define the size of the hexagon shape
 
